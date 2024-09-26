@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: datafeed_shared_schema
+    database: "{{('RISHI')}}"
+    schema: dbt_rkesh
+
+    tables:
+      - name: STG_PAYMENTS
+      - name: STG_ORDERS
+      - name: STG_CUSTOMERS
+      - name: EMPLOYEES
