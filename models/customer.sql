@@ -1,11 +1,7 @@
 {{ config(materialized='table') }}
 
 with rishi as (
-    select id, 
-        first_name,
-        last_name
-        from {{source('datafeed_shared_schema','STG_CUSTOMERS')}})
-        select * from rishi 
- 
-
- 
+    select id from {{source('datafeed_shared_schema','STG_PAYMENTS')}})
+ union  
+   select id  from {{source('datafeed_shared_schema','STG_ORDERS')}}) 
+           select * from rishi 
