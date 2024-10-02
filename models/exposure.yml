@@ -6,12 +6,6 @@ exposures:
       - ref('employee')
       - ref('joins')
       - ref('posthook_prehook')
-      - source('datafeed_shared_schema','STG_PAYMENTS')
-      - source('datafeed_shared_schema','STG_ORDERS')
-      - source('datafeed_shared_schema','STG_CUSTOMERS')
-      - source('datafeed_shared_schema','EMPLOYEES')
-      - source('datafeed_shared_schema','CUSTOMERS')
-      - source('datafeed_shared_schema','NEWTABLE')
       - source('datafeed_shared_schema','DIMCUSTOMERS')
       - source('datafeed_shared_schema','DIMEMPLOYEE')
     owner:
