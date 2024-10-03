@@ -9,7 +9,17 @@ sources:
  
       - name: DIMCUSTOMERS 
       - name: DIMEMPLOYEE
-      - name: STG_ORDERS
       - name: CUSTOMERS
       - name: STG_CUSTOMERS
+      - name: STG_PAYMENTS
+      - name: STG_ORDERS
+        columns:
+            - name: id
+              tests:
+                - unique
+                - not_null
+            - name: status
+              tests:
+                - accepted_values:
+                      values: ['placed','shipped','not completed','completed','returned','return_pending'] 
 
