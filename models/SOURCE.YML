@@ -8,6 +8,10 @@ sources:
     tables:
  
       - name: DIMCUSTOMERS 
+<<<<<<< HEAD
+      - name: DIMEMPLOYEE 
+
+=======
       - name: DIMEMPLOYEE
       - name: CUSTOMERS
       - name: STG_CUSTOMERS
@@ -22,4 +26,5 @@ sources:
               tests:
                 - accepted_values:
                       values: ['placed','shipped','not completed','completed','returned','return_pending'] 
+>>>>>>> ea5f2934add232330bba0fa3beb89ec566bdbaf0
 
