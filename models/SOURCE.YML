@@ -9,5 +9,7 @@ sources:
  
       - name: DIMCUSTOMERS 
       - name: DIMEMPLOYEE
-
+      - name: STG_ORDERS
+      - name: CUSTOMERS
+      - name: STG_CUSTOMERS
 

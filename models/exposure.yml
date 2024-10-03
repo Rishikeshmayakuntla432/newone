@@ -8,6 +8,8 @@ exposures:
       - ref('posthook_prehook')
       - source('datafeed_shared_schema','DIMCUSTOMERS')
       - source('datafeed_shared_schema','DIMEMPLOYEE')
+      - source('datafeed_shared_schema','STG_CUSTOMERS')
+      - source('datafeed_shared_schema','STG_ORDERS')
     owner:
       name:  Rishikesh
-      email: mayakuntlarishikesh432@gmail.com
+      email: mayakuntlarishikesh432@gmail.com  
