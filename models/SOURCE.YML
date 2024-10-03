@@ -6,13 +6,10 @@ sources:
     
 
     tables:
-      - name: STG_PAYMENTS
-      - name: STG_ORDERS
-      - name: STG_CUSTOMERS
-      - name: EMPLOYEES 
-      - name: CUSTOMERS 
-      - name: NEWTABLE
+ 
       - name: DIMCUSTOMERS 
       - name: DIMEMPLOYEE
-
+      - name: STG_ORDERS
+      - name: CUSTOMERS
+      - name: STG_CUSTOMERS
 
