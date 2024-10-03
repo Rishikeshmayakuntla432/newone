@@ -13,6 +13,6 @@ sources:
       - name: CUSTOMERS 
       - name: NEWTABLE
       - name: DIMCUSTOMERS 
-      - name: DIMEMPLOYEE
+      - name: DIMEMPLOYEE 
 
 
