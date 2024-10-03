@@ -6,13 +6,25 @@ sources:
     
 
     tables:
-      - name: STG_PAYMENTS
-      - name: STG_ORDERS
-      - name: STG_CUSTOMERS
-      - name: EMPLOYEES 
-      - name: CUSTOMERS 
-      - name: NEWTABLE
+ 
       - name: DIMCUSTOMERS 
+<<<<<<< HEAD
       - name: DIMEMPLOYEE 
 
+=======
+      - name: DIMEMPLOYEE
+      - name: CUSTOMERS
+      - name: STG_CUSTOMERS
+      - name: STG_PAYMENTS
+      - name: STG_ORDERS
+        columns:
+            - name: id
+              tests:
+                - unique
+                - not_null
+            - name: status
+              tests:
+                - accepted_values:
+                      values: ['placed','shipped','not completed','completed','returned','return_pending'] 
+>>>>>>> ea5f2934add232330bba0fa3beb89ec566bdbaf0
 
